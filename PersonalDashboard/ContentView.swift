@@ -7,7 +7,14 @@
 
 import SwiftUI
 import CoreData
+import KeychainSwift
 
+/*
+@ TODO:
+ - Make home default view
+ - Use Composable Architecture?
+ - Use Moya ? 
+ */
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -15,30 +22,26 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+  
+  
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+              
+              NavigationLink {
+              Text("Home")
+              } label: {
+                Text("Home")
+              }
+              
+              NavigationLink {
+                TogglView()
+              } label: {
+                Text("Toggl")
+              }
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+
         }
     }
 
@@ -81,8 +84,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}
+let jsonDecoder: JSONDecoder = {
+  let decoder = JSONDecoder()
+  return decoder
+}()
+

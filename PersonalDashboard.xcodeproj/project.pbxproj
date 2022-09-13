@@ -16,6 +16,14 @@
 		54009AF828CFC07F001C4F53 /* PersonalDashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009AF728CFC07F001C4F53 /* PersonalDashboardTests.swift */; };
 		54009B0228CFC07F001C4F53 /* PersonalDashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009B0128CFC07F001C4F53 /* PersonalDashboardUITests.swift */; };
 		54009B0428CFC07F001C4F53 /* PersonalDashboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009B0328CFC07F001C4F53 /* PersonalDashboardUITestsLaunchTests.swift */; };
+		54BD347128D119CC000E5BF3 /* SwiftUItilities in Frameworks */ = {isa = PBXBuildFile; productRef = 54BD347028D119CC000E5BF3 /* SwiftUItilities */; };
+		54BD347528D11A7B000E5BF3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 54BD347428D11A7B000E5BF3 /* KeychainSwift */; };
+		54BD347728D129C6000E5BF3 /* TogglAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347628D129C6000E5BF3 /* TogglAuthResponse.swift */; };
+		54BD347C28D12A00000E5BF3 /* ApiRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */; };
+		54BD347E28D12A4B000E5BF3 /* ApiProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347D28D12A4B000E5BF3 /* ApiProject.swift */; };
+		54BD348228D12A8C000E5BF3 /* TogglViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348128D12A8C000E5BF3 /* TogglViewModel.swift */; };
+		54BD348428D12AA6000E5BF3 /* TogglView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348328D12AA6000E5BF3 /* TogglView.swift */; };
+		54BD348728D12AF8000E5BF3 /* KeychainSwift+wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,13 @@
 		54009AFD28CFC07F001C4F53 /* PersonalDashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalDashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54009B0128CFC07F001C4F53 /* PersonalDashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDashboardUITests.swift; sourceTree = "<group>"; };
 		54009B0328CFC07F001C4F53 /* PersonalDashboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDashboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54009B1028CFC098001C4F53 /* PersonalDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonalDashboard.entitlements; sourceTree = "<group>"; };
+		54BD347628D129C6000E5BF3 /* TogglAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglAuthResponse.swift; sourceTree = "<group>"; };
+		54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoutes.swift; sourceTree = "<group>"; };
+		54BD347D28D12A4B000E5BF3 /* ApiProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProject.swift; sourceTree = "<group>"; };
+		54BD348128D12A8C000E5BF3 /* TogglViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglViewModel.swift; sourceTree = "<group>"; };
+		54BD348328D12AA6000E5BF3 /* TogglView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglView.swift; sourceTree = "<group>"; };
+		54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainSwift+wrappers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BD347528D11A7B000E5BF3 /* KeychainSwift in Frameworks */,
+				54BD347128D119CC000E5BF3 /* SwiftUItilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +115,11 @@
 		54009AE028CFC07D001C4F53 /* PersonalDashboard */ = {
 			isa = PBXGroup;
 			children = (
+				54BD348528D12AE6000E5BF3 /* Extensions */,
+				54BD347F28D12A74000E5BF3 /* Screens */,
+				54BD347A28D129F3000E5BF3 /* Client */,
+				54BD347828D129D1000E5BF3 /* Api */,
+				54009B1028CFC098001C4F53 /* PersonalDashboard.entitlements */,
 				54009AE128CFC07D001C4F53 /* PersonalDashboardApp.swift */,
 				54009AE328CFC07D001C4F53 /* ContentView.swift */,
 				54009AE528CFC07F001C4F53 /* Assets.xcassets */,
@@ -133,6 +155,56 @@
 			path = PersonalDashboardUITests;
 			sourceTree = "<group>";
 		};
+		54BD347828D129D1000E5BF3 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				54BD347628D129C6000E5BF3 /* TogglAuthResponse.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		54BD347928D129EB000E5BF3 /* Toggl */ = {
+			isa = PBXGroup;
+			children = (
+				54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */,
+				54BD347D28D12A4B000E5BF3 /* ApiProject.swift */,
+			);
+			path = Toggl;
+			sourceTree = "<group>";
+		};
+		54BD347A28D129F3000E5BF3 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				54BD347928D129EB000E5BF3 /* Toggl */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		54BD347F28D12A74000E5BF3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				54BD348028D12A7B000E5BF3 /* Toggl */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		54BD348028D12A7B000E5BF3 /* Toggl */ = {
+			isa = PBXGroup;
+			children = (
+				54BD348128D12A8C000E5BF3 /* TogglViewModel.swift */,
+				54BD348328D12AA6000E5BF3 /* TogglView.swift */,
+			);
+			path = Toggl;
+			sourceTree = "<group>";
+		};
+		54BD348528D12AE6000E5BF3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +221,10 @@
 			dependencies = (
 			);
 			name = PersonalDashboard;
+			packageProductDependencies = (
+				54BD347028D119CC000E5BF3 /* SwiftUItilities */,
+				54BD347428D11A7B000E5BF3 /* KeychainSwift */,
+			);
 			productName = PersonalDashboard;
 			productReference = 54009ADE28CFC07D001C4F53 /* PersonalDashboard.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +297,10 @@
 				Base,
 			);
 			mainGroup = 54009AD528CFC07D001C4F53;
+			packageReferences = (
+				54BD346F28D119CC000E5BF3 /* XCRemoteSwiftPackageReference "SwiftUItilities" */,
+				54BD347328D11A7B000E5BF3 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 54009ADF28CFC07D001C4F53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,9 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BD348228D12A8C000E5BF3 /* TogglViewModel.swift in Sources */,
+				54BD348428D12AA6000E5BF3 /* TogglView.swift in Sources */,
+				54BD347E28D12A4B000E5BF3 /* ApiProject.swift in Sources */,
 				54009AEB28CFC07F001C4F53 /* Persistence.swift in Sources */,
+				54BD347728D129C6000E5BF3 /* TogglAuthResponse.swift in Sources */,
+				54BD348728D12AF8000E5BF3 /* KeychainSwift+wrappers.swift in Sources */,
 				54009AE428CFC07D001C4F53 /* ContentView.swift in Sources */,
 				54009AEE28CFC07F001C4F53 /* PersonalDashboard.xcdatamodeld in Sources */,
+				54BD347C28D12A00000E5BF3 /* ApiRoutes.swift in Sources */,
 				54009AE228CFC07D001C4F53 /* PersonalDashboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PersonalDashboard/PersonalDashboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PersonalDashboard/Preview Content\"";
@@ -438,8 +525,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lat.cristian.PersonalDashboard;
+				PRODUCT_BUNDLE_IDENTIFIER = lat.cristian.PersonalDashboardBis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PersonalDashboard/PersonalDashboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PersonalDashboard/Preview Content\"";
@@ -467,8 +556,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lat.cristian.PersonalDashboard;
+				PRODUCT_BUNDLE_IDENTIFIER = lat.cristian.PersonalDashboardBis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,6 +681,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54BD346F28D119CC000E5BF3 /* XCRemoteSwiftPackageReference "SwiftUItilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crisrojas/SwiftUItilities";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		54BD347328D11A7B000E5BF3 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54BD347028D119CC000E5BF3 /* SwiftUItilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54BD346F28D119CC000E5BF3 /* XCRemoteSwiftPackageReference "SwiftUItilities" */;
+			productName = SwiftUItilities;
+		};
+		54BD347428D11A7B000E5BF3 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54BD347328D11A7B000E5BF3 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		54009AEC28CFC07F001C4F53 /* PersonalDashboard.xcdatamodeld */ = {

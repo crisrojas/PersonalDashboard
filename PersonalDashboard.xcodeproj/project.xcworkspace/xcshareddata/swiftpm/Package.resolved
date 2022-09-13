@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "keychain-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/keychain-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "32a99b537d1c6f3529a08257c28a5feb70c0c5af"
+      }
+    },
+    {
+      "identity" : "swiftuitilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/crisrojas/SwiftUItilities",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4c17351a0513e959eb55ab21425f1364d8574113"
+      }
+    }
+  ],
+  "version" : 2
+}

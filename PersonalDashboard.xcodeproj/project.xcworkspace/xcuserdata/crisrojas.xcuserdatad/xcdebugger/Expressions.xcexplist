@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in closure #1 in AuthViewModel.login():ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.lastResultCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthViewModel.getProjects(apiToken:):ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.get(&quot;1&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "keychain.get(&quot;toggl_api_token&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "KeychainKey.togglApiToken.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "KeychainSwift.set(_:forKey:withAccess:):KeychainSwift.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastResultCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
