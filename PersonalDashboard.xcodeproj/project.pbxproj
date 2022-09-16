@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54009AE228CFC07D001C4F53 /* PersonalDashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009AE128CFC07D001C4F53 /* PersonalDashboardApp.swift */; };
-		54009AE428CFC07D001C4F53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009AE328CFC07D001C4F53 /* ContentView.swift */; };
+		54009AE428CFC07D001C4F53 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009AE328CFC07D001C4F53 /* SideBar.swift */; };
 		54009AE628CFC07F001C4F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54009AE528CFC07F001C4F53 /* Assets.xcassets */; };
 		54009AE928CFC07F001C4F53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54009AE828CFC07F001C4F53 /* Preview Assets.xcassets */; };
 		54009AEB28CFC07F001C4F53 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009AEA28CFC07F001C4F53 /* Persistence.swift */; };
@@ -16,13 +16,20 @@
 		54009AF828CFC07F001C4F53 /* PersonalDashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009AF728CFC07F001C4F53 /* PersonalDashboardTests.swift */; };
 		54009B0228CFC07F001C4F53 /* PersonalDashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009B0128CFC07F001C4F53 /* PersonalDashboardUITests.swift */; };
 		54009B0428CFC07F001C4F53 /* PersonalDashboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009B0328CFC07F001C4F53 /* PersonalDashboardUITestsLaunchTests.swift */; };
+		5417AB9628D3BAAB0071B1AB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9528D3BAAB0071B1AB /* AppState.swift */; };
+		5417AB9828D3BAD80071B1AB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9728D3BAD80071B1AB /* Helpers.swift */; };
+		5417AB9A28D3C3D70071B1AB /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9928D3C3D70071B1AB /* SidebarItem.swift */; };
+		5417AB9C28D3C3EE0071B1AB /* ConstantDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9B28D3C3EE0071B1AB /* ConstantDependencies.swift */; };
+		5417AB9E28D3C4100071B1AB /* TogglSignInFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9D28D3C4100071B1AB /* TogglSignInFormView.swift */; };
+		5417ABA028D3E84E0071B1AB /* TogglUserDbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9F28D3E84E0071B1AB /* TogglUserDbApi.swift */; };
+		5417ABA328D3EB070071B1AB /* SwiftWind in Frameworks */ = {isa = PBXBuildFile; productRef = 5417ABA228D3EB070071B1AB /* SwiftWind */; };
 		54BD347128D119CC000E5BF3 /* SwiftUItilities in Frameworks */ = {isa = PBXBuildFile; productRef = 54BD347028D119CC000E5BF3 /* SwiftUItilities */; };
 		54BD347528D11A7B000E5BF3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 54BD347428D11A7B000E5BF3 /* KeychainSwift */; };
-		54BD347728D129C6000E5BF3 /* TogglAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347628D129C6000E5BF3 /* TogglAuthResponse.swift */; };
+		54BD347728D129C6000E5BF3 /* ApiTogglUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */; };
 		54BD347C28D12A00000E5BF3 /* ApiRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */; };
 		54BD347E28D12A4B000E5BF3 /* ApiProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347D28D12A4B000E5BF3 /* ApiProject.swift */; };
-		54BD348228D12A8C000E5BF3 /* TogglViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348128D12A8C000E5BF3 /* TogglViewModel.swift */; };
-		54BD348428D12AA6000E5BF3 /* TogglView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348328D12AA6000E5BF3 /* TogglView.swift */; };
+		54BD348228D12A8C000E5BF3 /* TogglScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348128D12A8C000E5BF3 /* TogglScreenState.swift */; };
+		54BD348428D12AA6000E5BF3 /* TogglScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348328D12AA6000E5BF3 /* TogglScreen.swift */; };
 		54BD348728D12AF8000E5BF3 /* KeychainSwift+wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +53,7 @@
 /* Begin PBXFileReference section */
 		54009ADE28CFC07D001C4F53 /* PersonalDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54009AE128CFC07D001C4F53 /* PersonalDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDashboardApp.swift; sourceTree = "<group>"; };
-		54009AE328CFC07D001C4F53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54009AE328CFC07D001C4F53 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		54009AE528CFC07F001C4F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54009AE828CFC07F001C4F53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		54009AEA28CFC07F001C4F53 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -57,11 +64,17 @@
 		54009B0128CFC07F001C4F53 /* PersonalDashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDashboardUITests.swift; sourceTree = "<group>"; };
 		54009B0328CFC07F001C4F53 /* PersonalDashboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDashboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54009B1028CFC098001C4F53 /* PersonalDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonalDashboard.entitlements; sourceTree = "<group>"; };
-		54BD347628D129C6000E5BF3 /* TogglAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglAuthResponse.swift; sourceTree = "<group>"; };
+		5417AB9528D3BAAB0071B1AB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5417AB9728D3BAD80071B1AB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		5417AB9928D3C3D70071B1AB /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
+		5417AB9B28D3C3EE0071B1AB /* ConstantDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantDependencies.swift; sourceTree = "<group>"; };
+		5417AB9D28D3C4100071B1AB /* TogglSignInFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglSignInFormView.swift; sourceTree = "<group>"; };
+		5417AB9F28D3E84E0071B1AB /* TogglUserDbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglUserDbApi.swift; sourceTree = "<group>"; };
+		54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTogglUser.swift; sourceTree = "<group>"; };
 		54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoutes.swift; sourceTree = "<group>"; };
 		54BD347D28D12A4B000E5BF3 /* ApiProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProject.swift; sourceTree = "<group>"; };
-		54BD348128D12A8C000E5BF3 /* TogglViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglViewModel.swift; sourceTree = "<group>"; };
-		54BD348328D12AA6000E5BF3 /* TogglView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglView.swift; sourceTree = "<group>"; };
+		54BD348128D12A8C000E5BF3 /* TogglScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglScreenState.swift; sourceTree = "<group>"; };
+		54BD348328D12AA6000E5BF3 /* TogglScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglScreen.swift; sourceTree = "<group>"; };
 		54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainSwift+wrappers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +85,7 @@
 			files = (
 				54BD347528D11A7B000E5BF3 /* KeychainSwift in Frameworks */,
 				54BD347128D119CC000E5BF3 /* SwiftUItilities in Frameworks */,
+				5417ABA328D3EB070071B1AB /* SwiftWind in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +135,9 @@
 				54BD347828D129D1000E5BF3 /* Api */,
 				54009B1028CFC098001C4F53 /* PersonalDashboard.entitlements */,
 				54009AE128CFC07D001C4F53 /* PersonalDashboardApp.swift */,
-				54009AE328CFC07D001C4F53 /* ContentView.swift */,
+				54009AE328CFC07D001C4F53 /* SideBar.swift */,
+				5417AB9B28D3C3EE0071B1AB /* ConstantDependencies.swift */,
+				5417AB9928D3C3D70071B1AB /* SidebarItem.swift */,
 				54009AE528CFC07F001C4F53 /* Assets.xcassets */,
 				54009AEA28CFC07F001C4F53 /* Persistence.swift */,
 				54009AEC28CFC07F001C4F53 /* PersonalDashboard.xcdatamodeld */,
@@ -158,7 +174,7 @@
 		54BD347828D129D1000E5BF3 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				54BD347628D129C6000E5BF3 /* TogglAuthResponse.swift */,
+				54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -184,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				54BD348028D12A7B000E5BF3 /* Toggl */,
+				5417AB9528D3BAAB0071B1AB /* AppState.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -191,8 +208,10 @@
 		54BD348028D12A7B000E5BF3 /* Toggl */ = {
 			isa = PBXGroup;
 			children = (
-				54BD348128D12A8C000E5BF3 /* TogglViewModel.swift */,
-				54BD348328D12AA6000E5BF3 /* TogglView.swift */,
+				54BD348128D12A8C000E5BF3 /* TogglScreenState.swift */,
+				54BD348328D12AA6000E5BF3 /* TogglScreen.swift */,
+				5417AB9D28D3C4100071B1AB /* TogglSignInFormView.swift */,
+				5417AB9F28D3E84E0071B1AB /* TogglUserDbApi.swift */,
 			);
 			path = Toggl;
 			sourceTree = "<group>";
@@ -201,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */,
+				5417AB9728D3BAD80071B1AB /* Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,6 +244,7 @@
 			packageProductDependencies = (
 				54BD347028D119CC000E5BF3 /* SwiftUItilities */,
 				54BD347428D11A7B000E5BF3 /* KeychainSwift */,
+				5417ABA228D3EB070071B1AB /* SwiftWind */,
 			);
 			productName = PersonalDashboard;
 			productReference = 54009ADE28CFC07D001C4F53 /* PersonalDashboard.app */;
@@ -300,6 +321,7 @@
 			packageReferences = (
 				54BD346F28D119CC000E5BF3 /* XCRemoteSwiftPackageReference "SwiftUItilities" */,
 				54BD347328D11A7B000E5BF3 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				5417ABA128D3EB070071B1AB /* XCRemoteSwiftPackageReference "SwiftWind" */,
 			);
 			productRefGroup = 54009ADF28CFC07D001C4F53 /* Products */;
 			projectDirPath = "";
@@ -343,13 +365,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BD348228D12A8C000E5BF3 /* TogglViewModel.swift in Sources */,
-				54BD348428D12AA6000E5BF3 /* TogglView.swift in Sources */,
+				54BD348228D12A8C000E5BF3 /* TogglScreenState.swift in Sources */,
+				54BD348428D12AA6000E5BF3 /* TogglScreen.swift in Sources */,
+				5417AB9C28D3C3EE0071B1AB /* ConstantDependencies.swift in Sources */,
 				54BD347E28D12A4B000E5BF3 /* ApiProject.swift in Sources */,
 				54009AEB28CFC07F001C4F53 /* Persistence.swift in Sources */,
-				54BD347728D129C6000E5BF3 /* TogglAuthResponse.swift in Sources */,
+				54BD347728D129C6000E5BF3 /* ApiTogglUser.swift in Sources */,
+				5417ABA028D3E84E0071B1AB /* TogglUserDbApi.swift in Sources */,
+				5417AB9A28D3C3D70071B1AB /* SidebarItem.swift in Sources */,
 				54BD348728D12AF8000E5BF3 /* KeychainSwift+wrappers.swift in Sources */,
-				54009AE428CFC07D001C4F53 /* ContentView.swift in Sources */,
+				5417AB9E28D3C4100071B1AB /* TogglSignInFormView.swift in Sources */,
+				5417AB9628D3BAAB0071B1AB /* AppState.swift in Sources */,
+				5417AB9828D3BAD80071B1AB /* Helpers.swift in Sources */,
+				54009AE428CFC07D001C4F53 /* SideBar.swift in Sources */,
 				54009AEE28CFC07F001C4F53 /* PersonalDashboard.xcdatamodeld in Sources */,
 				54BD347C28D12A00000E5BF3 /* ApiRoutes.swift in Sources */,
 				54009AE228CFC07D001C4F53 /* PersonalDashboardApp.swift in Sources */,
@@ -683,6 +711,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5417ABA128D3EB070071B1AB /* XCRemoteSwiftPackageReference "SwiftWind" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crisrojas/SwiftWind";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
 		54BD346F28D119CC000E5BF3 /* XCRemoteSwiftPackageReference "SwiftUItilities" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/crisrojas/SwiftUItilities";
@@ -702,6 +738,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5417ABA228D3EB070071B1AB /* SwiftWind */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5417ABA128D3EB070071B1AB /* XCRemoteSwiftPackageReference "SwiftWind" */;
+			productName = SwiftWind;
+		};
 		54BD347028D119CC000E5BF3 /* SwiftUItilities */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54BD346F28D119CC000E5BF3 /* XCRemoteSwiftPackageReference "SwiftUItilities" */;

@@ -3,24 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in closure #1 in AuthViewModel.login():ContentView.swift">
+         contextName = "ApiProject.saveLocally(in:userId:):ApiProject.swift">
          <PersistentStrings>
             <PersistentString
-               value = "keychain.lastResultCode">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "AuthViewModel.getProjects(apiToken:):ContentView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "keychain.get(&quot;1&quot;)">
-            </PersistentString>
-            <PersistentString
-               value = "keychain.get(&quot;toggl_api_token&quot;)">
-            </PersistentString>
-            <PersistentString
-               value = "KeychainKey.togglApiToken.rawValue">
+               value = "existingItem.name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -29,6 +15,71 @@
          <PersistentStrings>
             <PersistentString
                value = "lastResultCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TogglProjectHomeRow.body.getter:SideBar.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "project.actualHours">
+            </PersistentString>
+            <PersistentString
+               value = "project.actualHours / 400">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in AuthViewModel.login():ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.lastResultCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TogglScreen.load():TogglView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastTogglSync">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TogglScreen.load():TogglScreen.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.get(.currentTogglUserId)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in closure #1 in PersonalDashboardApp.body.getter:PersonalDashboardApp.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.get(.togglApiToken)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static TogglUser.getCurrentUserLastSync(in:):TogglScreen.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "TogglUser.getLastSyncDate(for: currentUserId, in: viewContext)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthViewModel.getProjects(apiToken:):ContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.get(&quot;toggl_api_token&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "keychain.get(&quot;1&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "KeychainKey.togglApiToken.rawValue">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

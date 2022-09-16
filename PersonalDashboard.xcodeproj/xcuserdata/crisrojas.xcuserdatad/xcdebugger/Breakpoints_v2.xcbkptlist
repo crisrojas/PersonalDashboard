@@ -7,17 +7,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0DD42B75-DA1A-4797-8C52-F057447C8DFE"
+            uuid = "3D5C73A5-C0F2-4A42-89EA-93F47A87B57C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../Library/Developer/Xcode/DerivedData/PersonalDashboard-cplufkxagprbxaefrbdpwpbdtfsm/SourcePackages/checkouts/keychain-swift/Sources/KeychainSwift.swift"
+            filePath = "PersonalDashboard/Client/Toggl/ApiProject.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "set(_:forKey:withAccess:)"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "saveLocally(in:userId:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4D25806-BF2F-4833-BF8A-30B20C81D343"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalDashboard/SideBar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

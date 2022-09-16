@@ -6,39 +6,75 @@
 //
 
 import Foundation
+import CoreData
+import SwiftUI
 
-
-/*
- 
- Avaialble properties:
-//    let workspaceID: Int
-//    let clientID: String?
-//    let isPrivate, active: Bool
-//    let at, createdAt: Date
-//    let serverDeletedAt: String?
-//    let color: String
-//    let billable, template, autoEstimates, estimatedHours: String?
-//    let rate, rateLastUpdated, currency: String?
-//    let recurring: Bool
-//    let recurringParameters, currentPeriod, fixedFee: String?
-//    let wid: Int
-//    let cid: JSONNull?
- 
- */
 
 struct ApiProject: Identifiable, Decodable {
   let id: Int
-    let name: String
-
+  let name: String
   let active: Bool
-
   let actualHours: Int
+  
+  
+  enum CodingKeys: String, CodingKey {
+    case id
+    case name
+    case active
+    case actualHours = "actual_hours"
+  }
+}
 
 
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-      case active
-        case actualHours = "actual_hours"
+extension ApiProject {
+  
+  /// Get toggl projects from API
+  static func getProjects() async throws -> ProjectResponse {
+    
+    guard let apiToken = keychain.get(.togglApiToken) else {
+      throw AppError.apiTokenNotFound
     }
+    
+    var request = URLRequest(url: ApiRoutes.projects.url!)
+    request.httpMethod = "GET"
+    
+    let authData = (apiToken + ":" + "api_token").data(using: .utf8)!.base64EncodedString()
+    
+    request.addValue("Basic \(authData)", forHTTPHeaderField: "Authorization")
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    
+    let (data, _) = try await URLSession.shared.data(for: request)
+    return try jsonDecoder.decode(ProjectResponse.self, from: data)
+  }
+  
+  /// Saves project locally in CoreData.
+  /// If it exists, update.
+  /// If don't, insert.
+  func saveLocally(in viewContext: NSManagedObjectContext, userId: Int) throws {
+    
+    let user = TogglUser.getUser(with: userId, in: viewContext)
+    let item: TogglProject!
+    
+    let fetch: NSFetchRequest<TogglProject> = TogglProject.fetchRequest()
+    fetch.predicate = NSPredicate(format: "id == %@", id.description)
+    
+    let results = try? viewContext.fetch(fetch)
+    
+    /// Update
+    if let existingItem = results?.first {
+      item = existingItem
+      item.actualHours = Int32(actualHours)
+      
+    /// Insert
+    } else {
+      
+      item = TogglProject(context: viewContext)
+      item.user = user
+      item.id = Int32(id)
+      item.name = name
+      item.actualHours = Int32(actualHours)
+    }
+    
+    try viewContext.save()
+  }
 }
