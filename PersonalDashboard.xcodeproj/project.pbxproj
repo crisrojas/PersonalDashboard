@@ -19,7 +19,7 @@
 		5417AB9628D3BAAB0071B1AB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9528D3BAAB0071B1AB /* AppState.swift */; };
 		5417AB9828D3BAD80071B1AB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9728D3BAD80071B1AB /* Helpers.swift */; };
 		5417AB9A28D3C3D70071B1AB /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9928D3C3D70071B1AB /* SidebarItem.swift */; };
-		5417AB9C28D3C3EE0071B1AB /* ConstantDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9B28D3C3EE0071B1AB /* ConstantDependencies.swift */; };
+		5417AB9C28D3C3EE0071B1AB /* GlobalDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9B28D3C3EE0071B1AB /* GlobalDependencies.swift */; };
 		5417AB9E28D3C4100071B1AB /* TogglSignInFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9D28D3C4100071B1AB /* TogglSignInFormView.swift */; };
 		5417ABA028D3E84E0071B1AB /* TogglUserDbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417AB9F28D3E84E0071B1AB /* TogglUserDbApi.swift */; };
 		5417ABA328D3EB070071B1AB /* SwiftWind in Frameworks */ = {isa = PBXBuildFile; productRef = 5417ABA228D3EB070071B1AB /* SwiftWind */; };
@@ -28,9 +28,13 @@
 		54BD347728D129C6000E5BF3 /* ApiTogglUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */; };
 		54BD347C28D12A00000E5BF3 /* ApiRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */; };
 		54BD347E28D12A4B000E5BF3 /* ApiProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD347D28D12A4B000E5BF3 /* ApiProject.swift */; };
-		54BD348228D12A8C000E5BF3 /* TogglScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348128D12A8C000E5BF3 /* TogglScreenState.swift */; };
 		54BD348428D12AA6000E5BF3 /* TogglScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348328D12AA6000E5BF3 /* TogglScreen.swift */; };
 		54BD348728D12AF8000E5BF3 /* KeychainSwift+wrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */; };
+		54EADF6F28D504F00008FCF0 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EADF6E28D504F00008FCF0 /* KeychainStorage.swift */; };
+		54F04C0528D64747000A53D3 /* TogglListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F04C0428D64747000A53D3 /* TogglListScreen.swift */; };
+		54F04C0728D647E1000A53D3 /* HomeTogglList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F04C0628D647E1000A53D3 /* HomeTogglList.swift */; };
+		54F04C0A28D64871000A53D3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F04C0928D64871000A53D3 /* HomeScreen.swift */; };
+		54F04C0C28D648BB000A53D3 /* TogglProjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F04C0B28D648BB000A53D3 /* TogglProjectRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +71,19 @@
 		5417AB9528D3BAAB0071B1AB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5417AB9728D3BAD80071B1AB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		5417AB9928D3C3D70071B1AB /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
-		5417AB9B28D3C3EE0071B1AB /* ConstantDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantDependencies.swift; sourceTree = "<group>"; };
+		5417AB9B28D3C3EE0071B1AB /* GlobalDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDependencies.swift; sourceTree = "<group>"; };
 		5417AB9D28D3C4100071B1AB /* TogglSignInFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglSignInFormView.swift; sourceTree = "<group>"; };
 		5417AB9F28D3E84E0071B1AB /* TogglUserDbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglUserDbApi.swift; sourceTree = "<group>"; };
 		54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTogglUser.swift; sourceTree = "<group>"; };
 		54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoutes.swift; sourceTree = "<group>"; };
 		54BD347D28D12A4B000E5BF3 /* ApiProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProject.swift; sourceTree = "<group>"; };
-		54BD348128D12A8C000E5BF3 /* TogglScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglScreenState.swift; sourceTree = "<group>"; };
 		54BD348328D12AA6000E5BF3 /* TogglScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglScreen.swift; sourceTree = "<group>"; };
 		54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainSwift+wrappers.swift"; sourceTree = "<group>"; };
+		54EADF6E28D504F00008FCF0 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		54F04C0428D64747000A53D3 /* TogglListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglListScreen.swift; sourceTree = "<group>"; };
+		54F04C0628D647E1000A53D3 /* HomeTogglList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTogglList.swift; sourceTree = "<group>"; };
+		54F04C0928D64871000A53D3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		54F04C0B28D648BB000A53D3 /* TogglProjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglProjectRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,15 +137,11 @@
 		54009AE028CFC07D001C4F53 /* PersonalDashboard */ = {
 			isa = PBXGroup;
 			children = (
+				54009B1028CFC098001C4F53 /* PersonalDashboard.entitlements */,
+				54F04C0D28D64A34000A53D3 /* App */,
+				54BD347A28D129F3000E5BF3 /* Client */,
 				54BD348528D12AE6000E5BF3 /* Extensions */,
 				54BD347F28D12A74000E5BF3 /* Screens */,
-				54BD347A28D129F3000E5BF3 /* Client */,
-				54BD347828D129D1000E5BF3 /* Api */,
-				54009B1028CFC098001C4F53 /* PersonalDashboard.entitlements */,
-				54009AE128CFC07D001C4F53 /* PersonalDashboardApp.swift */,
-				54009AE328CFC07D001C4F53 /* SideBar.swift */,
-				5417AB9B28D3C3EE0071B1AB /* ConstantDependencies.swift */,
-				5417AB9928D3C3D70071B1AB /* SidebarItem.swift */,
 				54009AE528CFC07F001C4F53 /* Assets.xcassets */,
 				54009AEA28CFC07F001C4F53 /* Persistence.swift */,
 				54009AEC28CFC07F001C4F53 /* PersonalDashboard.xcdatamodeld */,
@@ -171,17 +175,10 @@
 			path = PersonalDashboardUITests;
 			sourceTree = "<group>";
 		};
-		54BD347828D129D1000E5BF3 /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
 		54BD347928D129EB000E5BF3 /* Toggl */ = {
 			isa = PBXGroup;
 			children = (
+				54BD347628D129C6000E5BF3 /* ApiTogglUser.swift */,
 				54BD347B28D12A00000E5BF3 /* ApiRoutes.swift */,
 				54BD347D28D12A4B000E5BF3 /* ApiProject.swift */,
 			);
@@ -199,8 +196,9 @@
 		54BD347F28D12A74000E5BF3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				54F04C0E28D64A3E000A53D3 /* Sidebar */,
+				54F04C0828D647FA000A53D3 /* Home */,
 				54BD348028D12A7B000E5BF3 /* Toggl */,
-				5417AB9528D3BAAB0071B1AB /* AppState.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -208,10 +206,11 @@
 		54BD348028D12A7B000E5BF3 /* Toggl */ = {
 			isa = PBXGroup;
 			children = (
-				54BD348128D12A8C000E5BF3 /* TogglScreenState.swift */,
 				54BD348328D12AA6000E5BF3 /* TogglScreen.swift */,
 				5417AB9D28D3C4100071B1AB /* TogglSignInFormView.swift */,
 				5417AB9F28D3E84E0071B1AB /* TogglUserDbApi.swift */,
+				54F04C0428D64747000A53D3 /* TogglListScreen.swift */,
+				54F04C0B28D648BB000A53D3 /* TogglProjectRow.swift */,
 			);
 			path = Toggl;
 			sourceTree = "<group>";
@@ -220,9 +219,38 @@
 			isa = PBXGroup;
 			children = (
 				54BD348628D12AF8000E5BF3 /* KeychainSwift+wrappers.swift */,
+				5417AB9B28D3C3EE0071B1AB /* GlobalDependencies.swift */,
 				5417AB9728D3BAD80071B1AB /* Helpers.swift */,
+				54EADF6E28D504F00008FCF0 /* KeychainStorage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		54F04C0828D647FA000A53D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				54F04C0628D647E1000A53D3 /* HomeTogglList.swift */,
+				54F04C0928D64871000A53D3 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		54F04C0D28D64A34000A53D3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5417AB9528D3BAAB0071B1AB /* AppState.swift */,
+				54009AE128CFC07D001C4F53 /* PersonalDashboardApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		54F04C0E28D64A3E000A53D3 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				54009AE328CFC07D001C4F53 /* SideBar.swift */,
+				5417AB9928D3C3D70071B1AB /* SidebarItem.swift */,
+			);
+			path = Sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,19 +393,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BD348228D12A8C000E5BF3 /* TogglScreenState.swift in Sources */,
 				54BD348428D12AA6000E5BF3 /* TogglScreen.swift in Sources */,
-				5417AB9C28D3C3EE0071B1AB /* ConstantDependencies.swift in Sources */,
+				5417AB9C28D3C3EE0071B1AB /* GlobalDependencies.swift in Sources */,
 				54BD347E28D12A4B000E5BF3 /* ApiProject.swift in Sources */,
+				54EADF6F28D504F00008FCF0 /* KeychainStorage.swift in Sources */,
+				54F04C0C28D648BB000A53D3 /* TogglProjectRow.swift in Sources */,
 				54009AEB28CFC07F001C4F53 /* Persistence.swift in Sources */,
 				54BD347728D129C6000E5BF3 /* ApiTogglUser.swift in Sources */,
 				5417ABA028D3E84E0071B1AB /* TogglUserDbApi.swift in Sources */,
 				5417AB9A28D3C3D70071B1AB /* SidebarItem.swift in Sources */,
+				54F04C0528D64747000A53D3 /* TogglListScreen.swift in Sources */,
+				54F04C0A28D64871000A53D3 /* HomeScreen.swift in Sources */,
 				54BD348728D12AF8000E5BF3 /* KeychainSwift+wrappers.swift in Sources */,
 				5417AB9E28D3C4100071B1AB /* TogglSignInFormView.swift in Sources */,
 				5417AB9628D3BAAB0071B1AB /* AppState.swift in Sources */,
 				5417AB9828D3BAD80071B1AB /* Helpers.swift in Sources */,
 				54009AE428CFC07D001C4F53 /* SideBar.swift in Sources */,
+				54F04C0728D647E1000A53D3 /* HomeTogglList.swift in Sources */,
 				54009AEE28CFC07F001C4F53 /* PersonalDashboard.xcdatamodeld in Sources */,
 				54BD347C28D12A00000E5BF3 /* ApiRoutes.swift in Sources */,
 				54009AE228CFC07D001C4F53 /* PersonalDashboardApp.swift in Sources */,

@@ -29,11 +29,11 @@ struct ApiProject: Identifiable, Decodable {
 extension ApiProject {
   
   /// Get toggl projects from API
-  static func getProjects() async throws -> ProjectResponse {
+  static func getProjects(with apiToken: String) async throws -> ProjectResponse {
     
-    guard let apiToken = keychain.get(.togglApiToken) else {
-      throw AppError.apiTokenNotFound
-    }
+//    guard let apiToken = keychain.get(.togglApiToken) else {
+//      throw AppError.apiTokenNotFound
+//    }
     
     var request = URLRequest(url: ApiRoutes.projects.url!)
     request.httpMethod = "GET"

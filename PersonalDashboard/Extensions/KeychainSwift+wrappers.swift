@@ -28,6 +28,8 @@ enum AppError: Error {
 }
 
 enum KeychainKey: String, CaseIterable {
+  case tests = "test"
   case togglApiToken = "toggl_api_token"
+  case currentTogglUser = "current_toggl_user"
   case currentTogglUserId = "current_toggl_user_id"
 }

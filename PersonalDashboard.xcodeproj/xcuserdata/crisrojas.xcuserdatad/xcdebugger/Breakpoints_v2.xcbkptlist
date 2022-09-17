@@ -7,33 +7,222 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3D5C73A5-C0F2-4A42-89EA-93F47A87B57C"
-            shouldBeEnabled = "Yes"
+            uuid = "6D5EF36F-CCA0-4E4E-B610-800418B0A06E"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PersonalDashboard/Client/Toggl/ApiProject.swift"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "saveLocally(in:userId:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D5EF36F-CCA0-4E4E-B610-800418B0A06E - 86fe045d478ea4b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "1112">
+               </Location>
+               <Location
+                  uuid = "6D5EF36F-CCA0-4E4E-B610-800418B0A06E - 35d5738bd30c441f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "6D5EF36F-CCA0-4E4E-B610-800418B0A06E - c6336c83c1f170fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A63FE75-5C79-4D77-B089-A2868FFC058D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "load()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B4D25806-BF2F-4833-BF8A-30B20C81D343"
+            uuid = "CCD2AD4B-D484-43DB-A050-EF8170730BE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CCD2AD4B-D484-43DB-A050-EF8170730BE4 - 86fe045d478ea76a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "CCD2AD4B-D484-43DB-A050-EF8170730BE4 - bab86c152cf80bdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "CCD2AD4B-D484-43DB-A050-EF8170730BE4 - f34d231f6b2a3b18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  uuid = "CCD2AD4B-D484-43DB-A050-EF8170730BE4 - 1364df22d427213d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for PersonalDashboard.TogglListScreen.load() async throws -&gt; ()"
+                  moduleName = "PersonalDashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/crisrojas/dev/Projects/PersonalDashboard/PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "77">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3814A20F-9E6E-4413-B5DA-6F4129B46F5A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "load()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDA9BC19-FFA9-42E6-B19E-85C9C7AB1148"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "updateProjectsFromApi()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9445D80-4253-4CFA-97BA-36AD7C9E252C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PersonalDashboard/SideBar.swift"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglListScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F635FD05-801E-4914-BB5E-CB3F727BF02C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalDashboard/Screens/Toggl/TogglUserDbApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "setSyncTimestamp(for:in:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

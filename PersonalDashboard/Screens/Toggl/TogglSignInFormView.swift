@@ -11,28 +11,52 @@ import SwiftUI
  @TODO:
  
 - Save "ApiTogglUser" object into keychain
- 
  */
 struct TogglSignInFormView: View {
   
-  @EnvironmentObject var appState: AppState
   @Environment(\.managedObjectContext) private var viewContext
-  
+  @AppStorage(.currentTogglUser) private var currentUser: Data?
   @State var email = String()
   @State var password = String()
-  @Binding var phase: TogglScreenState.Phase
-  
+  @State var state: ViewState?
+
+  enum ViewState {
+    case loading
+    case error(String)
+  }
+
   var body: some View {
-    TextField("Email", text: $email)
-    SecureField("Password", text: $password)
-      .onSubmit(login)
-    Text("Login")
-      .onTap(perform: login)
+    
+    switch state {
+    case .loading: ProgressView()
+    default: formView
+    }
   }
   
+  var formView: some View {
+    Form {
+      TextField("Email", text: $email)
+      SecureField("Password", text: $password)
+        .onSubmit(login)
+      Text("Login")
+        .onTap(perform: login)
+        .overlay(errorView)
+    }
+  }
+  
+  @ViewBuilder
+  var errorView: some View {
+    if case let .error(message) = state {
+      Text(message)
+    } else {
+      EmptyView()
+    }
+  }
+
   func login() {
     Task {
-      phase = .loading
+     
+      state = .loading
       
       var request = URLRequest(url: ApiRoutes.authentication.url!)
       request.httpMethod = "GET"
@@ -40,16 +64,12 @@ struct TogglSignInFormView: View {
       request.addValue("Basic \(authData)", forHTTPHeaderField: "Authorization")
       
       do {
-        let (data, _ ) = try await URLSession.shared.data(for: request)
-        let user = try jsonDecoder.decode(ApiTogglUser.self, from: data)
+        let (encodedUser, _ ) = try await URLSession.shared.data(for: request)
+        let user = try jsonDecoder.decode(ApiTogglUser.self, from: encodedUser)
         try user.saveLocally(in: viewContext)
-        keychain.set(user.apiToken, forKey: .togglApiToken)
-        keychain.set(user.id.description, forKey: .currentTogglUserId)
-        
-        appState.isLogged = true
-        
-      } catch {
-        phase = .error
+        currentUser = encodedUser
+      } catch let error {
+        state = .error(error.localizedDescription)
       }
     }
   }

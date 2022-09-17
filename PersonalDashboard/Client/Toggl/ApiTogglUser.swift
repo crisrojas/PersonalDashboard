@@ -18,23 +18,29 @@ struct ApiTogglUser: Codable {
     case apiToken = "api_token"
   }
  
-  /// Saves toggl user locally only if it doesn't exists
+  /// Saves toggl user locally in CoreData only if it doesn't exists
+  /// We save the user to associated it with projects through relationships, so we only need the id
+  /// apiToken isn't saved in CoreData (only Keychain)
   func saveLocally(in viewContext: NSManagedObjectContext) throws {
-  
-   try viewContext.performAndWait {
+    
+    try viewContext.performAndWait {
       let item: TogglUser!
       let fetch: NSFetchRequest<TogglProject> = TogglProject.fetchRequest()
       fetch.predicate = NSPredicate(format: "id == %@", id.description)
       let results = try? viewContext.fetch(fetch)
       let noResults = results?.isEmpty ?? true
-
-      if noResults {
-        item = TogglUser(context: viewContext)
-        item.id = Int32(id)
-      }
       
+      guard noResults else { return }
+      
+      item = TogglUser(context: viewContext)
+      item.id = Int32(id)
       try viewContext.save()
     }
-
+  }
+  
+  /// Updates (overrides) the keychain value for the currentUser key
+  func saveInKeychain() throws {
+    let data = try jsonEncoder.encode(self)
+    keychain.set(data, forKey: KeychainKey.currentTogglUserId.rawValue)
   }
 }

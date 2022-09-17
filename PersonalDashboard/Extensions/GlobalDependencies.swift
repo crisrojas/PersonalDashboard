@@ -23,3 +23,9 @@ let jsonDecoder: JSONDecoder = {
 let keychain: KeychainSwift = {
   return KeychainSwift()
 }()
+
+let jsonEncoder: JSONEncoder = {
+  let encoder = JSONEncoder()
+  // config
+  return encoder
+}()

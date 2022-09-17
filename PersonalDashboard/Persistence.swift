@@ -27,6 +27,10 @@ struct PersistenceController {
         }
         return result
     }()
+  
+ static var previewContext: NSManagedObjectContext {
+    PersistenceController.preview.container.viewContext
+  }
 
     let container: NSPersistentCloudKitContainer
 
@@ -68,5 +72,6 @@ struct PersistenceController {
            print("Attempted to clear persistent store: " + error.localizedDescription)
        }
   }
+  
   #endif
 }

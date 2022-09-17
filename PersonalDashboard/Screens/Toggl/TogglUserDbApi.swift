@@ -9,10 +9,23 @@ import CoreData
 
 extension TogglUser {
   
+  static func setSyncTimestamp
+  (for userId: Int, in viewContext: NSManagedObjectContext) throws {
+    
+    let user = getUser(with: userId, in: viewContext)
+    user?.lastSync = Date.now
+    try viewContext.save()
+  }
+  
   static func saveCurrentUserSyncDate(in viewContext: NSManagedObjectContext) throws {
     let currentUser = getCurrentUser(in: viewContext)
     currentUser?.lastSync = Date.now
     try viewContext.save()
+  }
+  
+  static func getUserLastSync(id: Int, in viewContext: NSManagedObjectContext) throws -> Date? {
+    let user = getUser(with: id, in: viewContext)
+    return user?.lastSync
   }
   
   static func getCurrentUserId(in viewContext: NSManagedObjectContext) -> Int? {
@@ -30,11 +43,12 @@ extension TogglUser {
   
   static func getCurrentUserLastSync(in viewContext: NSManagedObjectContext) -> Date? {
     guard
-      let currentUserId = keychain.get(.currentTogglUserId)?.toInt
+    let currentUserId = keychain.get(.currentTogglUserId)?.toInt
     else { return nil }
     
     return TogglUser.getLastSyncDate(for: currentUserId, in: viewContext)
   }
+
   
   static func getUser
   (with id: Int, in viewContext: NSManagedObjectContext) -> TogglUser? {

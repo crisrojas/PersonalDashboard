@@ -3,29 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ApiProject.saveLocally(in:userId:):ApiProject.swift">
+         contextName = "TogglScreen.load():TogglView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "existingItem.name">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "KeychainSwift.set(_:forKey:withAccess:):KeychainSwift.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "lastResultCode">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in TogglProjectHomeRow.body.getter:SideBar.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "project.actualHours">
-            </PersistentString>
-            <PersistentString
-               value = "project.actualHours / 400">
+               value = "lastTogglSync">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -38,10 +19,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TogglScreen.load():TogglView.swift">
+         contextName = "closure #2 in closure #1 in PersonalDashboardApp.body.getter:PersonalDashboardApp.swift">
          <PersistentStrings>
             <PersistentString
-               value = "lastTogglSync">
+               value = "keychain.get(.togglApiToken)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in KeychainStorage.init(wrappedValue:_:):TogglScreen.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Keychain().get(key.rawValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "KeychainStorage.init(wrappedValue:_:):TogglScreen.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keychain.get(.currentTogglUser)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -54,10 +51,24 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #2 in closure #1 in PersonalDashboardApp.body.getter:PersonalDashboardApp.swift">
+         contextName = "ApiProject.saveLocally(in:userId:):ApiProject.swift">
          <PersistentStrings>
             <PersistentString
-               value = "keychain.get(.togglApiToken)">
+               value = "user.id">
+            </PersistentString>
+            <PersistentString
+               value = "existingItem.name">
+            </PersistentString>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TogglScreen.body.getter:TogglScreen.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentUser">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -80,6 +91,73 @@
             </PersistentString>
             <PersistentString
                value = "KeychainKey.togglApiToken.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TogglProject.shortTermProgress.getter:HomeTogglList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shortTermGoal.goal">
+            </PersistentString>
+            <PersistentString
+               value = "shortTermGoal.totalHours">
+            </PersistentString>
+            <PersistentString
+               value = "Double(actualHours)">
+            </PersistentString>
+            <PersistentString
+               value = "shortTermGoal">
+            </PersistentString>
+            <PersistentString
+               value = "actualHours">
+            </PersistentString>
+            <PersistentString
+               value = "Double(shortTermGoal.totalHours)">
+            </PersistentString>
+            <PersistentString
+               value = "Double(shortTermGoal.totalHours - actualHours) / Double(shortTermGoal.goal)">
+            </PersistentString>
+            <PersistentString
+               value = "shortTermGoal.totalHours - actualHours">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TogglProjectHomeRow.body.getter:SideBar.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "project.actualHours">
+            </PersistentString>
+            <PersistentString
+               value = "project.actualHours / 400">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TogglListScreen.load():TogglScreen.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "KeychainSwift.set(_:forKey:withAccess:):KeychainSwift.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastResultCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in closure #2 in HomeTogglList.body.getter:HomeTogglList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "project.shortTermProgress">
+            </PersistentString>
+            <PersistentString
+               value = "project.name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

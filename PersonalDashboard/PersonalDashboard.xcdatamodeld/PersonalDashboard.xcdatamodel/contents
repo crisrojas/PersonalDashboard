@@ -7,8 +7,15 @@
         <attribute name="actualHours" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="longTermGoal" optional="YES" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="shortGoal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TogglShortTermGoal" inverseName="project" inverseEntity="TogglShortTermGoal"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TogglUser" inverseName="projects" inverseEntity="TogglUser"/>
+    </entity>
+    <entity name="TogglShortTermGoal" representedClassName="TogglShortTermGoal" syncable="YES" codeGenerationType="class">
+        <attribute name="goal" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalHours" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TogglProject" inverseName="shortGoal" inverseEntity="TogglProject"/>
     </entity>
     <entity name="TogglUser" representedClassName="TogglUser" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -17,7 +24,8 @@
     </entity>
     <elements>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="TogglProject" positionX="-63" positionY="-9" width="128" height="104"/>
-        <element name="TogglUser" positionX="-54" positionY="0" width="128" height="74"/>
+        <element name="TogglProject" positionX="-548.62060546875" positionY="-47.45584106445312" width="128" height="148"/>
+        <element name="TogglUser" positionX="-852.2282104492188" positionY="-19.56134033203125" width="128" height="88"/>
+        <element name="TogglShortTermGoal" positionX="-639" positionY="18" width="128" height="74"/>
     </elements>
 </model>

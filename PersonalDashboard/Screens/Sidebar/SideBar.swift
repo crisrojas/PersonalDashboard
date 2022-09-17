@@ -16,6 +16,7 @@ import SwiftWind
  - Use Composable Architecture?
  - Use Moya ?
  */
+
 struct SideBar: View {
   
   @Environment(\.managedObjectContext) private var viewContext
@@ -33,7 +34,6 @@ struct SideBar: View {
           TogglScreen()
         }
       }
-      
       .top(.s4)
       .environment(\.defaultMinListRowHeight, .s9)
       
@@ -42,8 +42,6 @@ struct SideBar: View {
         .navigationBarHidden(true)
     }
     .background(Color.black)
-    
-
   }
   
   func sidebarItem<Content: View>(_ item: SidebarItem, content: () -> Content) -> some View {
@@ -70,72 +68,11 @@ struct SideBar: View {
 }
 
 
-/*
- 
- @Todo
- -  Sort descriptors should get only favorites and user specific
- */
-
-struct HomeScreen: View {
-  
-  @FetchRequest(
-    sortDescriptors: [NSSortDescriptor(keyPath: \TogglProject.name, ascending: true)],
-    animation: .default)
-  private var togglProjects: FetchedResults<TogglProject>
-  
-  var body: some View {
-    let favoritedProjects = togglProjects
-      .filter { $0.isFavorite }
-      .sorted(by: { $0.actualHours > $1.actualHours })
-    
-    VStack(alignment: .leading, spacing: 0) {
-      HStack(spacing: .s3) {
-        Image(systemName: "timer")
-          .resizable()
-          .size(.s6)
-          .foregroundColor(WindColor.red.c400)
-        
-        
-        Text("Toggl")
-          .font(.title)
-          .fontWeight(.bold)
-        
-        Spacer()
-      }
-      .leading(.s16)
-      .top(.s16)
-      
-      LazyVStack(alignment: .leading) {
-        ForEach(favoritedProjects) { project in
-          TogglProjectHomeRow(project: project)
-            .bottom(.s2)
-            .horizontal(.s16)
-        }
-        
-      }
-      .listStyle(.plain)
-      .top(.s12)
-      
-      Spacer()
-    }
-  }
+extension String {
+  static let currentTogglUser = "current_toggl_user"
 }
 
-struct TogglProjectHomeRow: View {
-  
-  let project: TogglProject
-  
-  var body: some View {
-    HStack(spacing: .s3) {
-      let progress = Double(project.actualHours) / 400
-      PieProgress(progress: progress, color: .zinc)
-        .size(.s4)
-      Text(project.name!)
-      
-      Spacer()
-    }
-  }
-}
+
 
 
 struct PieProgress: View {
